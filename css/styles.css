@@ -53,7 +53,7 @@ h3, h2 {
     padding: 15px 0 0 0;
 }
 
-p {
+section p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -96,5 +96,50 @@ button {
 section {
     text-align: center;
     margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
+@media (max-width: 480px) {
+    header {
+        background-color: #D1891C;
+        color: black;
+        font-weight: bold;
+    }
+
+    header h1 {
+        color: white;
+    }
+
+    section {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer .texto-footer {
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        background-color: #D1891C;
+        color: black;
+        font-weight: bold;
+    }
+
+    header h1 {
+        color: white;
+    }
+
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer .texto-footer {
+        text-align: center;
+    }
+}
